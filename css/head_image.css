@@ -1,0 +1,70 @@
+/*head_image-----*/
+.main{
+/*  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;*/
+  margin: auto;
+}
+.main_text{
+  display: inline-block;
+}
+.head_image{
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  background: url(../image/head_image.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  box-shadow: 0 0 8px 1px #000;
+  animation: smile 5s steps(1) infinite;
+  cursor: pointer;
+}
+
+/*1,2,3,4,5*/
+@keyframes smile{
+  0% {background-position: 0 -0px;}
+  3% {background-position: 0 -360px;}
+  6%{background-position: 0 -0px;}
+}
+
+@keyframes smile_m{
+  0% {background-position: 0 -480px;}
+  50% {background-position: 0 -0px;}
+}
+
+
+/*6,7,8*/
+@keyframes normal_s{
+  0% {background-position: 0 -600px ;}
+  3% {background-position: 0 -720px;}
+  6%{background-position: 0 -600px;}
+}
+@keyframes normal_s_m{
+  0% {background-position: 0 -840px;}
+  50% {background-position: 0 -600px;}
+}
+/*9,10,11*/
+@keyframes sad{
+  0% {background-position: 0 -960px ;}
+  3% {background-position: 0 -1080px;}
+  6%{background-position: 0 -960px;}
+}
+@keyframes sad_m{
+  0% {background-position: 0 -1200px;}
+  50% {background-position: 0 -960px;}
+}
+
+/*12,13*/
+@keyframes mad{
+  0% {background-position: 0 -1320px;}
+  3% {background-position: 0 -1440px;}
+  6%{background-position: 0 -1320px;}
+}
+
+/*14,15*/
+@keyframes cry{
+  0% {background-position: 0 -1560px ;}
+  50% {background-position: 0 -1680px;}
+  100%{background-position: 0 -1560px;}
+}

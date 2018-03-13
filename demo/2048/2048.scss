@@ -1,0 +1,50 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background: #888;
+  margin: 100px;
+  border-radius: 10px;
+}
+
+.background{
+  position: absolute;
+  z-index: 1;
+}
+
+.background,.display,.move{
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    width: 100px;
+    height: 100px;
+    background: #bbb;
+    margin: 10px 0 0 10px;
+    border-radius: 3px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 27px;
+    font-family: cursive;
+    color: #fff;
+  }
+}
+
+
+.move,{
+  position: relative;
+  z-index: 2;
+  li{
+    background: transparent;
+  }
+}
+
+.transition{
+  transition: transform 200ms;
+}
+
