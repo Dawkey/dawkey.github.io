@@ -1,0 +1,33 @@
+svg {
+ display: block;
+}
+polygon {
+ fill: #41B883;
+}
+circle {
+  fill: transparent;
+  stroke: #35495E;
+}
+label{
+  color: #35495E;
+}
+input[type="range"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+#app{
+  width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid #35495E;
+}
+
+.polygon{
+  width: 210px;
+  height: 210px;
+  margin: auto;
+}
