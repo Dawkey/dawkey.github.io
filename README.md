@@ -8,3 +8,6 @@
 
 ### polygon-learn(vue.js的一个demo):
 [https://dawkey.github.io/demo/polygon-learn/polygon.html](https://dawkey.github.io/demo/polygon-learn/polygon.html)
+
+### MSQ(多边形音乐动效):
+[https://dawkey.github.io/demo/MSQ/MSQ.html](https://dawkey.github.io/demo/MSQ/MSQ.html)
