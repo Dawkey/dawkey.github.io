@@ -86,7 +86,8 @@ polygon{
     transform: translate(-50%,-50%);
     font-size: 15px;
     color: #41B883;
-    white-space: nowrap;
+    width: 80%;
+    line-height: 30px;
 }
 
 @media(max-width: 750px){
