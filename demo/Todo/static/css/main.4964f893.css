@@ -1,2 +1,420 @@
-html{background-color:#f4f5f6;font-size:16px}body{margin:0}.App{position:relative}.App .todo-header{align-items:center;display:flex;font-size:1.5rem;justify-content:center;position:relative}.App .todo-header .button-close,.App .todo-header .button-more{font-size:1.1rem;position:absolute;right:1rem}.App .more-dialog{background-color:#0000;height:100%;left:0;position:fixed;top:0;width:100%;z-index:3}.App .more-dialog .button-container{background-color:#f9fafb;border-radius:1rem;box-shadow:0 0 .5rem #ddd;font-size:1rem;line-height:2.5rem;padding:.8rem;position:absolute;right:.5rem;top:2rem}.App .more-dialog .button-container .button-hide{border-bottom:.5px solid #ccc}.App .more-dialog .button-container .button-start-multi-delete.disable{color:#aaa}.App .button-add{bottom:5rem;font-size:2.5rem;position:fixed;right:1rem;z-index:1}.App .button-multi-delete{bottom:1rem;font-size:1.5rem;left:50%;position:fixed;transform:translateX(-50%);z-index:1}.App .button-multi-delete.disable{color:#aaa}@font-face{font-display:block;font-family:todoicon;font-style:normal;font-weight:400;src:url(/static/media/todoicon.37235782ec9d4d7d9685.eot);src:url(/static/media/todoicon.37235782ec9d4d7d9685.eot#iefix) format("embedded-opentype"),url(/static/media/todoicon.d2790bc50d9151c288f9.ttf) format("truetype"),url(/static/media/todoicon.6e4877d70e66886ca0f7.woff) format("woff"),url(/static/media/todoicon.64a7b065624714038810.svg#todoicon) format("svg")}[class*=" icon-"],[class^=icon-]{speak:never;font-feature-settings:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:todoicon!important;font-style:normal;font-variant:normal;font-weight:400;line-height:1;text-transform:none}.icon-close:before{content:"\e90b"}.icon-checked2:before{content:"\e908"}.icon-confirm:before{color:#515152;content:"\e909"}.icon-unchecked2:before{content:"\e90a"}.icon-back:before{content:"\e905"}.icon-note:before{content:"\e906"}.icon-point:before{content:"\e907"}.icon-add:before{content:"\e900"}.icon-checked:before{content:"\e901"}.icon-delete:before{content:"\e902"}.icon-more:before{content:"\e903"}.icon-unchecked:before{content:"\e904"}.todo-list{padding:.5rem}.todo-list .item-container{align-items:center;background-color:#f9fafb;border-radius:.5rem;box-shadow:0 0 .25rem #f0f0f0;display:flex;justify-content:space-between;margin:.5rem 0;min-height:4rem;padding:0 .5rem}.todo-list .item-container .todo-item{display:flex;flex-direction:column;flex-grow:1;justify-content:center;margin:.5rem;overflow:hidden}.todo-list .item-container .todo-item .item-content{word-wrap:break-word;-webkit-box-orient:vertical;-webkit-line-clamp:2;display:-webkit-box;line-height:1.5rem;overflow:hidden;text-overflow:ellipsis}.todo-list .item-container .todo-item .item-content.checked{text-decoration:line-through}.todo-list .item-container .todo-item .item-date{font-size:.8rem}.todo-list .item-container .button-check{font-size:1.2rem;margin-bottom:-.05rem}.todo-list .item-container .button-check2{font-size:1.25rem;margin-bottom:-.05rem}.todo-list .item-container .button-delete{font-size:1.25rem}.todo-list .item-container .icon-point{color:red;font-size:1.1rem;margin-left:.2rem;margin-right:-.5rem}.todo-operator{background-color:#f4f5f6;height:100%;left:0;position:fixed;top:0;width:100%;z-index:2}.todo-operator .operator-header{align-items:center;display:flex;height:2rem;justify-content:space-between;margin:0 1rem}.todo-operator .operator-header .button-back{font-size:1.5rem}.todo-operator .operator-header .button-confirm{font-size:1.4rem}.todo-operator .operator-body{padding:.5rem}.todo-operator .operator-body .item-container{align-items:center;background-color:#f9fafb;border-radius:.5rem;box-shadow:0 0 .25rem #f0f0f0;display:flex;justify-content:space-between;margin:.5rem 0;min-height:4rem;padding:0 .5rem}.todo-operator .operator-body .item-container .todo-item{display:flex;flex-direction:column;flex-grow:1;justify-content:center;margin:.5rem;overflow:hidden;position:relative}.todo-operator .operator-body .item-container .todo-item .item-copy{word-wrap:break-word;line-height:1.5rem;min-height:1.5rem;opacity:0}.todo-operator .operator-body .item-container .todo-item .item-input{background:inherit;border:none;color:inherit;font-family:inherit;font-size:1rem;height:100%;left:0;line-height:1.5rem;padding:0;position:absolute;resize:none;top:0;width:100%}.todo-operator .operator-body .item-container .todo-item .item-input:focus{outline:0}.todo-operator .operator-body .item-container .button-check{font-size:1.2rem;margin-bottom:-.05rem}.todo-operator .operator-body .item-container .button-delete{font-size:1.25rem}.todo-operator .operator-body .item-container .icon-point{font-size:1.2rem;margin-bottom:-.1rem;transition:all .3s ease}.todo-operator .operator-body .item-container .icon-point.important{color:red}.todo-operator .operator-body .item-container .icon-note{font-size:1.2rem;margin-bottom:-.1rem}.todo-operator .operator-body .operator-foot{bottom:1rem;display:flex;justify-content:center;position:absolute;width:100%}.todo-operator .operator-body .operator-foot .button-delete{font-size:1.5rem}.todo-operator .operator-body .switch{display:flex;justify-content:center}.todo-operator .operator-body .switch>input{-webkit-appearance:none;appearance:none;background-color:#ddd;border-radius:.7rem;height:1.4rem;margin:0;position:relative;transition:all .3s ease;width:2.8rem}.todo-operator .operator-body .switch>input:before{background-color:#fff;border-radius:.6rem;content:"";height:1.2rem;left:.1rem;position:absolute;top:.1rem;transition:all .3s ease;width:1.2rem}.todo-operator .operator-body .switch>input:checked{background-color:blue}.todo-operator .operator-body .switch>input:checked:before{left:1.5rem}.message-dialog{background:#0000000d;height:100%;left:0;position:fixed;top:0;width:100%;z-index:3}.message-dialog .dialog-container{background-color:#f9fafb;border-radius:1rem;bottom:1rem;left:1rem;padding:1rem;position:absolute;right:1rem;text-align:center}.message-dialog .dialog-container .content{font-size:.9rem}.message-dialog .dialog-container .button-container{display:flex;margin-top:1rem}.message-dialog .dialog-container .button-container .button-cancel,.message-dialog .dialog-container .button-container .button-delete{flex:1 1;margin:0 .5rem;padding:.5rem}.message-dialog .dialog-container .button-container .button-cancel{color:blue}.message-dialog .dialog-container .button-container .button-delete{color:red}.message-dialog .dialog-container .button-container .button-separator{background:#ccc;margin:.4rem 0;min-height:100%;width:.5px}
+html {
+    background-color: #f4f5f6;
+    font-size: 16px
+}
+
+body {
+    margin: 0
+}
+
+.App {
+    position: relative
+}
+
+.App .todo-header {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    position: relative
+}
+
+.App .todo-header .button-close,
+.App .todo-header .button-more {
+    font-size: 1.1rem;
+    position: absolute;
+    right: 1rem
+}
+
+.App .more-dialog {
+    background-color: #0000;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3
+}
+
+.App .more-dialog .button-container {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem #ddd;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    padding: .8rem;
+    position: absolute;
+    right: .5rem;
+    top: 2rem
+}
+
+.App .more-dialog .button-container .button-hide {
+    border-bottom: .5px solid #ccc
+}
+
+.App .more-dialog .button-container .button-start-multi-delete.disable {
+    color: #aaa
+}
+
+.App .button-add {
+    bottom: 5rem;
+    font-size: 2.5rem;
+    position: fixed;
+    right: 1rem;
+    z-index: 1
+}
+
+.App .button-multi-delete {
+    bottom: 1rem;
+    font-size: 1.5rem;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+    z-index: 1
+}
+
+.App .button-multi-delete.disable {
+    color: #aaa
+}
+
+@font-face {
+    font-display: block;
+    font-family: todoicon;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../media/todoicon.37235782ec9d4d7d9685.eot);
+    src: url(../media/todoicon.37235782ec9d4d7d9685.eot#iefix) format("embedded-opentype"), url(../media/todoicon.d2790bc50d9151c288f9.ttf) format("truetype"), url(../media/todoicon.6e4877d70e66886ca0f7.woff) format("woff"), url(../media/todoicon.64a7b065624714038810.svg#todoicon) format("svg")
+}
+
+[class*=" icon-"],
+[class^=icon-] {
+    speak: never;
+    font-feature-settings: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: todoicon !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none
+}
+
+.icon-close:before {
+    content: "\e90b"
+}
+
+.icon-checked2:before {
+    content: "\e908"
+}
+
+.icon-confirm:before {
+    color: #515152;
+    content: "\e909"
+}
+
+.icon-unchecked2:before {
+    content: "\e90a"
+}
+
+.icon-back:before {
+    content: "\e905"
+}
+
+.icon-note:before {
+    content: "\e906"
+}
+
+.icon-point:before {
+    content: "\e907"
+}
+
+.icon-add:before {
+    content: "\e900"
+}
+
+.icon-checked:before {
+    content: "\e901"
+}
+
+.icon-delete:before {
+    content: "\e902"
+}
+
+.icon-more:before {
+    content: "\e903"
+}
+
+.icon-unchecked:before {
+    content: "\e904"
+}
+
+.todo-list {
+    padding: .5rem
+}
+
+.todo-list .item-container {
+    align-items: center;
+    background-color: #f9fafb;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    min-height: 4rem;
+    padding: 0 .5rem
+}
+
+.todo-list .item-container .todo-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: .5rem;
+    overflow: hidden
+}
+
+.todo-list .item-container .todo-item .item-content {
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.todo-list .item-container .todo-item .item-content.checked {
+    text-decoration: line-through
+}
+
+.todo-list .item-container .todo-item .item-date {
+    font-size: .8rem
+}
+
+.todo-list .item-container .button-check {
+    font-size: 1.2rem;
+    margin-bottom: -.05rem
+}
+
+.todo-list .item-container .button-check2 {
+    font-size: 1.25rem;
+    margin-bottom: -.05rem
+}
+
+.todo-list .item-container .button-delete {
+    font-size: 1.25rem
+}
+
+.todo-list .item-container .icon-point {
+    color: red;
+    font-size: 1.1rem;
+    margin-left: .2rem;
+    margin-right: -.5rem
+}
+
+.todo-operator {
+    background-color: #f4f5f6;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2
+}
+
+.todo-operator .operator-header {
+    align-items: center;
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    margin: 0 1rem
+}
+
+.todo-operator .operator-header .button-back {
+    font-size: 1.5rem
+}
+
+.todo-operator .operator-header .button-confirm {
+    font-size: 1.4rem
+}
+
+.todo-operator .operator-body {
+    padding: .5rem
+}
+
+.todo-operator .operator-body .item-container {
+    align-items: center;
+    background-color: #f9fafb;
+    border-radius: .5rem;
+    box-shadow: 0 0 .25rem #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    min-height: 4rem;
+    padding: 0 .5rem
+}
+
+.todo-operator .operator-body .item-container .todo-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin: .5rem;
+    overflow: hidden;
+    position: relative
+}
+
+.todo-operator .operator-body .item-container .todo-item .item-copy {
+    word-wrap: break-word;
+    line-height: 1.5rem;
+    min-height: 1.5rem;
+    opacity: 0
+}
+
+.todo-operator .operator-body .item-container .todo-item .item-input {
+    background: inherit;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1rem;
+    height: 100%;
+    left: 0;
+    line-height: 1.5rem;
+    padding: 0;
+    position: absolute;
+    resize: none;
+    top: 0;
+    width: 100%
+}
+
+.todo-operator .operator-body .item-container .todo-item .item-input:focus {
+    outline: 0
+}
+
+.todo-operator .operator-body .item-container .button-check {
+    font-size: 1.2rem;
+    margin-bottom: -.05rem
+}
+
+.todo-operator .operator-body .item-container .button-delete {
+    font-size: 1.25rem
+}
+
+.todo-operator .operator-body .item-container .icon-point {
+    font-size: 1.2rem;
+    margin-bottom: -.1rem;
+    transition: all .3s ease
+}
+
+.todo-operator .operator-body .item-container .icon-point.important {
+    color: red
+}
+
+.todo-operator .operator-body .item-container .icon-note {
+    font-size: 1.2rem;
+    margin-bottom: -.1rem
+}
+
+.todo-operator .operator-body .operator-foot {
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%
+}
+
+.todo-operator .operator-body .operator-foot .button-delete {
+    font-size: 1.5rem
+}
+
+.todo-operator .operator-body .switch {
+    display: flex;
+    justify-content: center
+}
+
+.todo-operator .operator-body .switch>input {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ddd;
+    border-radius: .7rem;
+    height: 1.4rem;
+    margin: 0;
+    position: relative;
+    transition: all .3s ease;
+    width: 2.8rem
+}
+
+.todo-operator .operator-body .switch>input:before {
+    background-color: #fff;
+    border-radius: .6rem;
+    content: "";
+    height: 1.2rem;
+    left: .1rem;
+    position: absolute;
+    top: .1rem;
+    transition: all .3s ease;
+    width: 1.2rem
+}
+
+.todo-operator .operator-body .switch>input:checked {
+    background-color: blue
+}
+
+.todo-operator .operator-body .switch>input:checked:before {
+    left: 1.5rem
+}
+
+.message-dialog {
+    background: #0000000d;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3
+}
+
+.message-dialog .dialog-container {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 1rem;
+    position: absolute;
+    right: 1rem;
+    text-align: center
+}
+
+.message-dialog .dialog-container .content {
+    font-size: .9rem
+}
+
+.message-dialog .dialog-container .button-container {
+    display: flex;
+    margin-top: 1rem
+}
+
+.message-dialog .dialog-container .button-container .button-cancel,
+.message-dialog .dialog-container .button-container .button-delete {
+    flex: 1 1;
+    margin: 0 .5rem;
+    padding: .5rem
+}
+
+.message-dialog .dialog-container .button-container .button-cancel {
+    color: blue
+}
+
+.message-dialog .dialog-container .button-container .button-delete {
+    color: red
+}
+
+.message-dialog .dialog-container .button-container .button-separator {
+    background: #ccc;
+    margin: .4rem 0;
+    min-height: 100%;
+    width: .5px
+}
+
 /*# sourceMappingURL=main.4964f893.css.map*/
